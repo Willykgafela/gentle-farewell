@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact – Gentle Farewell Services</title>
+  <meta name="description" content="Contact Gentle Farewell Services for funeral support, questions, or to book an appointment.">
+  <link href="styles.css" rel="stylesheet">
+  <style>
+    /* Contact Form Styling */
+    form[action^="mailto:"] {
+      background: #f8fafc;
+      border-radius: 1em;
+      padding: 2em;
+      max-width: 500px;
+      margin: 2em auto;
+      box-shadow: 0 2px 12px 0 rgba(30,41,59,0.06);
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+    form[action^="mailto:"] input,
+    form[action^="mailto:"] textarea {
+      border: 1px solid #cbd5e1;
+      border-radius: 0.5em;
+      padding: 1em;
+      font-size: 1em;
+      background: #fff;
+      color: #1e293b;
+      transition: border-color 0.2s;
+    }
+    form[action^="mailto:"] input:focus,
+    form[action^="mailto:"] textarea:focus {
+      border-color: #1e293b;
+      outline: none;
+      background: #f1f5f9;
+    }
+    form[action^="mailto:"] button[type="submit"] {
+      background: #1e293b;
+      color: #fff;
+      border: none;
+      border-radius: 0.5em;
+      padding: 1em 2em;
+      font-size: 1em;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    form[action^="mailto:"] button[type="submit"]:hover {
+      background: #334155;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html">Packages</a></li>
+      <li><a href="booking.html">Book Appointment</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h2>Contact Us</h2>
+    <form action="mailto:you@yourdomain.com" method="post" enctype="text/plain">
+      <input name="name" placeholder="Your Name" required>
+      <input name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p>Phone: +27 72 662 7880</p>
+    <p>Email: info@gentlefarewell.co.za</p>
+
+    <p>
+      <a href="https://wa.me/27123456789?text=Hello%20Gentle%20Farewell%20Services%2C%20I’d%20like%20to%20ask%20about%20...">
+        Chat with us on WhatsApp
+      </a>
+    </p>
+
+    <h3>Location</h3>
+    <p>123 Peaceful Lane, Pretoria, South Africa</p>
+    <div id="map" style="height: 400px; width: 100%;">
+      <!-- Embed Google Map here -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789012!2d28.123456789012345!3d-25.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9c123456789012%3A0x1234567890123456!2sGentle%20Farewell%20Services!5e0!3m2!1sen!2sza!4v1612345678901" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+  <footer>
+    <p>Gentle Farewell Services • Serving your community with care.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

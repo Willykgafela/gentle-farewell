@@ -1,0 +1,231 @@
+<!-- gallery.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gallery & Memories – Gentle Farewell Services</title>
+  <meta name="description" content="Gallery of peaceful moments, nature scenes, and tributes from Gentle Farewell Services.">
+  <link href="styles.css" rel="stylesheet">
+  <style>
+    .tab-btn { padding: 1em 2em; border: none; background: #f8fafc; color: #222; border-radius: 0.5em; margin: 0 0.5em; cursor: pointer; font-weight: 500; }
+    .tab-btn.active, .tab-btn:hover { background: #1e293b; color: #fff; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 2em; }
+    .testimonial-card { background: #f1f5f9; border-radius: 1em; padding: 2em; margin-bottom: 2em; }
+    .star { color: #fbbf24; font-size: 1.2em; }
+    .tribute-upload { border: 2px dashed #cbd5e1; border-radius: 1em; padding: 2em; text-align: center; margin-bottom: 1em; }
+    .hidden { display: none; }
+    .active { background: #1e293b !important; color: #fff !important; }
+  </style>
+  <script>
+    function showTab(tab) {
+      document.getElementById('memories').style.display = tab === 'memories' ? 'block' : 'none';
+      document.getElementById('testimonials').style.display = tab === 'testimonials' ? 'block' : 'none';
+      document.getElementById('submit').style.display = tab === 'submit' ? 'block' : 'none';
+      document.getElementById('tab-memories').classList.toggle('active', tab === 'memories');
+      document.getElementById('tab-testimonials').classList.toggle('active', tab === 'testimonials');
+      document.getElementById('tab-submit').classList.toggle('active', tab === 'submit');
+    }
+    window.onload = function() { showTab('memories'); };
+  </script>
+</head>
+<body>
+  <nav>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html">Packages</a></li>
+      <li><a href="booking.html">Book Appointment</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section style="padding: 5em 0; background: linear-gradient(to bottom right, #eff6ff, #fff);">
+    <div class="container text-center">
+      <h1 class="text-4xl font-light mb-6">Memories & Tributes</h1>
+      <p class="text-xl text-gray-600">
+        A peaceful gallery showcasing our services and a space for families to share memories and tributes.
+      </p>
+    </div>
+  </section>
+
+  <!-- Tab Navigation -->
+  <section style="padding: 2em 0; background: #fff; border-bottom: 1px solid #e5e7eb;">
+    <div class="container text-center">
+      <button id="tab-memories" class="tab-btn" onclick="showTab('memories')">Our Services Gallery</button>
+      <button id="tab-testimonials" class="tab-btn" onclick="showTab('testimonials')">Family Testimonials</button>
+      <button id="tab-submit" class="tab-btn" onclick="showTab('submit')">Submit Tribute</button>
+    </div>
+  </section>
+
+  <!-- Gallery Content -->
+  <section id="memories">
+    <div class="container">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-light mb-4">Peaceful Moments</h2>
+        <p class="text-lg text-gray-600">
+          Images that reflect the dignity, peace, and beauty of our memorial services.
+        </p>
+      </div>
+      <div class="gallery-grid">
+        <div>
+          <img src="images/flower.jpg" alt="Peaceful Garden Memorial" class="responsive" />
+          <div class="mt-2"><strong>Peaceful Garden Memorial</strong><br><span style="font-size:0.9em;color:#64748b;">memorial</span></div>
+        </div>
+        <div>
+          <img src="images/candlelight.jpg" alt="Candlelight Remembrance" class="responsive" />
+          <div class="mt-2"><strong>Candlelight Remembrance</strong><br><span style="font-size:0.9em;color:#64748b;">memorial</span></div>
+        </div>
+        <div>
+          <img src="images/flower tribute.jpg" alt="Flower Tribute" class="responsive" />
+          <div class="mt-2"><strong>Flower Tribute</strong><br><span style="font-size:0.9em;color:#64748b;">flowers</span></div>
+        </div>
+        <div>
+          <img src="https://images.pexels.com/photos/267967/pexels-photo-267967.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Sunset Memorial Service" class="responsive" />
+          <div class="mt-2"><strong>Sunset Memorial Service</strong><br><span style="font-size:0.9em;color:#64748b;">services</span></div>
+        </div>
+        <div>
+          <img src="https://images.pexels.com/photos/1114425/pexels-photo-1114425.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Memorial Roses" class="responsive" />
+          <div class="mt-2"><strong>Memorial Roses</strong><br><span style="font-size:0.9em;color:#64748b;">flowers</span></div>
+        </div>
+        <div>
+          <img src="images/memorial service.jpg" alt="Peaceful Ceremony" class="responsive" />
+          <div class="mt-2"><strong>Peaceful Ceremony</strong><br><span style="font-size:0.9em;color:#64748b;">services</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" style="display:none;">
+    <div class="container">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-light mb-4">What Families Say</h2>
+        <p class="text-lg text-gray-600">
+          Heartfelt words from families we've had the honor to serve.
+        </p>
+      </div>
+      <div>
+        <div class="testimonial-card">
+          <div style="margin-bottom:1em;">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span style="margin-left:1em;font-size:0.9em;color:#64748b;">15/01/2024</span>
+          </div>
+          <p class="text-gray-700 text-lg mb-4">
+            "Gentle Care made an incredibly difficult time bearable with their compassionate service and attention to detail."
+          </p>
+          <div style="display:flex;align-items:center;">
+            <div style="width:40px;height:40px;background:#e0e7ff;border-radius:50%;display:flex;align-items:center;justify-content:center;">
+              <span style="color:#1e3a8a;font-size:1.2em;">&#10084;</span>
+            </div>
+            <span style="margin-left:1em;font-weight:500;">Sarah Solomons</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div style="margin-bottom:1em;">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span style="margin-left:1em;font-size:0.9em;color:#64748b;">03/02/2024</span>
+          </div>
+          <p class="text-gray-700 text-lg mb-4">
+            "The team went above and beyond to honor my fathers memory. Their grief counseling was invaluable."
+          </p>
+          <div style="display:flex;align-items:center;">
+            <div style="width:40px;height:40px;background:#e0e7ff;border-radius:50%;display:flex;align-items:center;justify-content:center;">
+              <span style="color:#1e3a8a;font-size:1.2em;">&#10084;</span>
+            </div>
+            <span style="margin-left:1em;font-weight:500;">Michael Phasha</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div style="margin-bottom:1em;">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span style="margin-left:1em;font-size:0.9em;color:#64748b;">20/02/2024</span>
+          </div>
+          <p class="text-gray-700 text-lg mb-4">
+            "Professional, caring, and respectful throughout the entire process. Highly recommended."
+          </p>
+          <div style="display:flex;align-items:center;">
+            <div style="width:40px;height:40px;background:#e0e7ff;border-radius:50%;display:flex;align-items:center;justify-content:center;">
+              <span style="color:#1e3a8a;font-size:1.2em;">&#10084;</span>
+            </div>
+            <span style="margin-left:1em;font-weight:500;">Linah Ngobeni</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Submit Tribute -->
+  <section id="submit" style="display:none;">
+    <div class="container" style="max-width:600px;">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-light mb-4">Share a Memory</h2>
+        <p class="text-lg text-gray-600">
+          We invite families to share photos, memories, or tributes that celebrate the life of your loved one.
+        </p>
+      </div>
+      <form class="space-y-6">
+        <div>
+          <label for="tribute-name" class="block text-sm font-medium text-gray-700 mb-2">Your Name</label>
+          <input type="text" id="tribute-name" class="w-full px-4 py-3 border border-gray-300 rounded-lg" placeholder="Enter your name">
+        </div>
+        <div>
+          <label for="loved-one-name" class="block text-sm font-medium text-gray-700 mb-2">Loved One's Name</label>
+          <input type="text" id="loved-one-name" class="w-full px-4 py-3 border border-gray-300 rounded-lg" placeholder="Name of your loved one">
+        </div>
+        <div>
+          <label for="tribute-message" class="block text-sm font-medium text-gray-700 mb-2">Memory or Tribute</label>
+          <textarea id="tribute-message" rows="6" class="w-full px-4 py-3 border border-gray-300 rounded-lg" placeholder="Share a special memory, tribute, or message..."></textarea>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-2">Upload Photo (Optional)</label>
+          <div class="tribute-upload">
+            <span style="font-size:2em;color:#94a3b8;">&#128247;</span>
+            <p class="text-gray-600 mb-2">Click to upload a photo</p>
+            <p class="text-sm text-gray-500">PNG, JPG up to 10MB</p>
+            <input type="file" accept="image/*" class="hidden">
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;">
+          <input type="checkbox" id="consent" class="h-4 w-4 text-blue-600 border-gray-300 rounded">
+          <label for="consent" class="ml-2 text-sm text-gray-700">I consent to sharing this tribute publicly on the website</label>
+        </div>
+        <button type="submit" class="w-full bg-blue-900 text-white px-6 py-4 rounded-lg text-lg font-medium">Submit Tribute</button>
+        <p class="text-sm text-gray-600 text-center">
+          All submissions are reviewed before being published. We reserve the right to moderate content to maintain the respectful nature of this space.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Quote Section -->
+  <section style="padding: 5em 0; background: #f1f5f9;">
+    <div class="container text-center">
+      <blockquote class="text-2xl font-light italic mb-8">
+        "What we have once enjoyed deeply we can never lose. All that we love deeply becomes a part of us."
+      </blockquote>
+      <cite class="text-lg text-gray-600">— Daniel malope</cite>
+    </div>
+  </section>
+
+  <footer>
+    <p>Gentle Farewell Services • Serving your community with care.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

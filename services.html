@@ -1,0 +1,224 @@
+<!-- services.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Our Services – Gentle Farewell Services</title>
+  <meta name="description" content="Funeral support services: grief counseling, planning, memorials, transport, catering.">
+  <link href="styles.css" rel="stylesheet">
+  <style>
+    .service-icon { background: #e0e7ff; padding: 0.75em; border-radius: 0.75em; margin-right: 1em; display: inline-flex; }
+    .service-card { background: #fff; border-radius: 1em; padding: 2em; box-shadow: 0 2px 12px 0 rgba(30,41,59,0.06); border: 1px solid #f1f5f9; transition: box-shadow 0.2s; }
+    .service-card:hover { box-shadow: 0 4px 24px 0 rgba(30,41,59,0.10); }
+    .service-features { margin-top: 1.5em; }
+    .service-features li { display: flex; align-items: flex-start; margin-bottom: 0.5em; }
+    .service-features .dot { width: 0.5em; height: 0.5em; background: #1e3a8a; border-radius: 50%; margin-top: 0.5em; margin-right: 0.75em; flex-shrink: 0; }
+    .process-step { display: flex; align-items: flex-start; gap: 1em; margin-bottom: 2em; }
+    .process-num { background: #1e3a8a; color: #fff; width: 2em; height: 2em; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.1em; flex-shrink: 0; }
+    .cta-btn { background: #fff; color: #1e3a8a; padding: 1em 2em; border-radius: 0.75em; font-size: 1.1em; font-weight: 500; text-decoration: none; margin: 0 0.5em; display: inline-block; border: none; transition: background 0.2s, color 0.2s; }
+    .cta-btn:hover { background: #e0e7ff; color: #1e293b; }
+    .cta-btn-outline { border: 2px solid #fff; background: transparent; color: #fff; }
+    .cta-btn-outline:hover { background: #fff; color: #1e3a8a; }
+    @media (max-width: 900px) {
+      .services-grid { grid-template-columns: 1fr 1fr !important; }
+    }
+    @media (max-width: 600px) {
+      .services-grid { grid-template-columns: 1fr !important; }
+      .process-step { flex-direction: column; gap: 0.5em; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="pricing.html">Packages</a></li>
+      <li><a href="booking.html">Book Appointment</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section style="padding: 5em 0; background: linear-gradient(to bottom right, #eff6ff, #fff);">
+    <div class="container text-center">
+      <h1 class="text-4xl font-light mb-6">Our Services</h1>
+      <p class="text-xl text-gray-600" style="max-width:700px;margin:0 auto;">
+        We provide comprehensive funeral support services designed to meet your family's unique needs during this difficult time.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section style="padding: 5em 0; background: #fff;">
+    <div class="container">
+      <div class="services-grid" style="display: grid; grid-template-columns: repeat(3,1fr); gap: 2em;">
+        <!-- Grief Support & Counseling -->
+        <div class="service-card">
+          <div style="display:flex;align-items:center;margin-bottom:1.5em;">
+            <span class="service-icon">
+              <!-- Heart SVG -->
+              <svg width="28" height="28" fill="none" stroke="#1e3a8a" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            </span>
+            <h3 class="text-xl font-semibold text-gray-900">Grief Support & Counseling</h3>
+          </div>
+          <p class="text-gray-600 mb-6">Professional grief counseling and emotional support to help you navigate the difficult journey of loss.</p>
+          <ul class="service-features">
+            <li><span class="dot"></span>Individual counseling sessions</li>
+            <li><span class="dot"></span>Group support meetings</li>
+            <li><span class="dot"></span>Family therapy</li>
+            <li><span class="dot"></span>Bereavement follow-up care</li>
+          </ul>
+        </div>
+        <!-- Burial Arrangements -->
+        <div class="service-card">
+          <div style="display:flex;align-items:center;margin-bottom:1.5em;">
+            <span class="service-icon">
+              <!-- FileText SVG -->
+              <svg width="28" height="28" fill="none" stroke="#1e3a8a" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </span>
+            <h3 class="text-xl font-semibold text-gray-900">Burial Arrangements</h3>
+          </div>
+          <p class="text-gray-600 mb-6">Complete burial services including all necessary documentation and ceremonial arrangements.</p>
+          <ul class="service-features">
+            <li><span class="dot"></span>Cemetery coordination</li>
+            <li><span class="dot"></span>Legal documentation</li>
+            <li><span class="dot"></span>Service planning</li>
+            <li><span class="dot"></span>Grave site preparation</li>
+          </ul>
+        </div>
+        <!-- Memorial Programs -->
+        <div class="service-card">
+          <div style="display:flex;align-items:center;margin-bottom:1.5em;">
+            <span class="service-icon">
+              <!-- Flower SVG -->
+              <svg width="28" height="28" fill="none" stroke="#1e3a8a" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.07-7.07l-1.41 1.41M6.34 17.66l-1.41 1.41m12.02 0l-1.41-1.41M6.34 6.34L4.93 4.93"/></svg>
+            </span>
+            <h3 class="text-xl font-semibold text-gray-900">Memorial Programs</h3>
+          </div>
+          <p class="text-gray-600 mb-6">Beautiful memorial services and programs to celebrate and honor your loved one's life.</p>
+          <ul class="service-features">
+            <li><span class="dot"></span>Service design & coordination</li>
+            <li><span class="dot"></span>Memorial booklets</li>
+            <li><span class="dot"></span>Photo tributes</li>
+            <li><span class="dot"></span>Music arrangements</li>
+          </ul>
+        </div>
+        <!-- Transport Services -->
+        <div class="service-card">
+          <div style="display:flex;align-items:center;margin-bottom:1.5em;">
+            <span class="service-icon">
+              <!-- Car SVG -->
+              <svg width="28" height="28" fill="none" stroke="#1e3a8a" stroke-width="2" viewBox="0 0 24 24"><path d="M16 3H8a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"/><line x1="8" y1="21" x2="8" y2="21"/><line x1="16" y1="21" x2="16" y2="21"/></svg>
+            </span>
+            <h3 class="text-xl font-semibold text-gray-900">Transport Services</h3>
+          </div>
+          <p class="text-gray-600 mb-6">Reliable transportation services for all funeral-related needs and family support.</p>
+          <ul class="service-features">
+            <li><span class="dot"></span>Hearse services</li>
+            <li><span class="dot"></span>Family transportation</li>
+            <li><span class="dot"></span>Flower car arrangements</li>
+            <li><span class="dot"></span>Long-distance transport</li>
+          </ul>
+        </div>
+        <!-- Catering Services -->
+        <div class="service-card">
+          <div style="display:flex;align-items:center;margin-bottom:1.5em;">
+            <span class="service-icon">
+              <!-- Utensils SVG -->
+              <svg width="28" height="28" fill="none" stroke="#1e3a8a" stroke-width="2" viewBox="0 0 24 24"><path d="M4 3v7a4 4 0 0 0 4 4h0a4 4 0 0 0 4-4V3"/><path d="M16 3v7a4 4 0 0 0 4 4h0a4 4 0 0 0 4-4V3"/></svg>
+            </span>
+            <h3 class="text-xl font-semibold text-gray-900">Catering Services</h3>
+          </div>
+          <p class="text-gray-600 mb-6">Professional catering for memorial gatherings and family receptions.</p>
+          <ul class="service-features">
+            <li><span class="dot"></span>Traditional funeral meals</li>
+            <li><span class="dot"></span>Custom menu planning</li>
+            <li><span class="dot"></span>Setup and service</li>
+            <li><span class="dot"></span>Dietary accommodations</li>
+          </ul>
+        </div>
+        <!-- Family Support Coordination -->
+        <div class="service-card">
+          <div style="display:flex;align-items:center;margin-bottom:1.5em;">
+            <span class="service-icon">
+              <!-- Users SVG -->
+              <svg width="28" height="28" fill="none" stroke="#1e3a8a" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-3-3.87"/><path d="M7 21v-2a4 4 0 0 1 3-3.87"/><circle cx="12" cy="7" r="4"/></svg>
+            </span>
+            <h3 class="text-xl font-semibold text-gray-900">Family Support Coordination</h3>
+          </div>
+          <p class="text-gray-600 mb-6">Comprehensive coordination services to help manage all aspects of funeral arrangements.</p>
+          <ul class="service-features">
+            <li><span class="dot"></span>Event coordination</li>
+            <li><span class="dot"></span>Guest management</li>
+            <li><span class="dot"></span>Logistics planning</li>
+            <li><span class="dot"></span>Timeline coordination</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section style="padding: 5em 0; background: #f8fafc;">
+    <div class="container">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-light mb-4">Our Process</h2>
+        <p class="text-lg text-gray-600">
+          We guide you through each step with care and professionalism.
+        </p>
+      </div>
+      <div>
+        <div class="process-step">
+          <div class="process-num">1</div>
+          <div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Initial Consultation</h3>
+            <p class="text-gray-600">We meet with your family to understand your needs, preferences, and discuss available options.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-num">2</div>
+          <div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Service Planning</h3>
+            <p class="text-gray-600">Our team works with you to plan every detail, ensuring the service reflects your loved one's life and your family's wishes.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-num">3</div>
+          <div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Coordination & Support</h3>
+            <p class="text-gray-600">We handle all logistics and provide ongoing support to your family throughout the entire process.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-num">4</div>
+          <div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Follow-up Care</h3>
+            <p class="text-gray-600">Our support continues beyond the service with grief counseling and ongoing assistance as needed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section style="padding: 5em 0; background: #1e3a8a; color: #fff;">
+    <div class="container text-center">
+      <h2 class="text-3xl font-light mb-6">Ready to Learn More About Our Services?</h2>
+      <p class="text-xl" style="color:#c7d2fe;margin-bottom:2em;">
+        Contact us today for a compassionate consultation about how we can support your family.
+      </p>
+      <a href="contact.html" class="cta-btn">Contact Us</a>
+      <a href="booking.html" class="cta-btn cta-btn-outline">Book Appointment</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Gentle Farewell Services • Serving your community with care.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
